@@ -1,0 +1,100 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 20% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 20% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 20% 18%;
+
+    --primary: 209 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 222 20% 18%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 222 13% 45%;
+
+    --accent: 209 100% 97%;
+    --accent-foreground: 222 20% 18%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 222 20% 18%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html, body {
+    @apply text-foreground bg-background antialiased scroll-smooth;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+
+  .glassmorphism {
+    @apply backdrop-blur-xl bg-white/80 border border-white/20 shadow-sm;
+  }
+
+  .h1 {
+    @apply text-4xl font-medium tracking-tight md:text-5xl lg:text-6xl;
+  }
+
+  .h2 {
+    @apply text-3xl font-medium tracking-tight md:text-4xl;
+  }
+
+  .h3 {
+    @apply text-2xl font-medium tracking-tight md:text-3xl;
+  }
+
+  .h4 {
+    @apply text-xl font-medium tracking-tight md:text-2xl;
+  }
+
+  .p1 {
+    @apply text-base md:text-lg;
+  }
+
+  .p2 {
+    @apply text-sm md:text-base;
+  }
+
+  .small {
+    @apply text-xs md:text-sm text-muted-foreground;
+  }
+
+  .container-tight {
+    @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  .transition-height {
+    transition-property: height;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+}
