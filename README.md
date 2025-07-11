@@ -63,7 +63,7 @@ Empowering underserved communities in India with AI-driven legal support.
 | Layer             | Tools/Frameworks                         |
 | ----------------- | ---------------------------------------- |
 | **Frontend**      | React.js, Leaflet.js                     |
-| **Backend**       | Python, FastAPI                          |
+| **Backend**       | Python, Flask                          |
 | **AI/NLP Models** | DeepSeek R1, Hugging Face Transformers   |
 | **RAG & Search**  | Cosine Similarity, Hugging Face Datasets |
 | **Messaging**     | Twilio API (WhatsApp Integration)        |
