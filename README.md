@@ -10,6 +10,16 @@ Empowering underserved communities in India with AI-driven legal support.
 
 ---
 
+<img width="480" height="480" alt="image" src="https://github.com/user-attachments/assets/66b443b6-b216-4752-97d5-d2889d4ecb0c" />
+<img width="480" height="480" alt="image" src="https://github.com/user-attachments/assets/503f6caf-9682-4144-8413-4183ae1623d6" />
+
+---
+
+<img width="480" height="480" alt="image" src="https://github.com/user-attachments/assets/55151f2c-f1cc-4792-b0f1-8bd86f7b795b" />
+<img width="480" height="480" alt="image" src="https://github.com/user-attachments/assets/fb427142-fdf1-4f1a-bcac-4ac6e4b76126" />
+
+---
+
 ## 🚀 Features
 
 ### 1️⃣ Case Understanding via AI
