@@ -116,14 +116,6 @@ npm start
 
 ---
 
-## 📸 Screenshots
-
-| Case Analyzer                                   | Document Generator                              | Lawyer Map                         |
-| ----------------------------------------------- | ----------------------------------------------- | ---------------------------------- |
-| ![Case Analyzer](screenshots/case-analyzer.png) | ![Doc Generator](screenshots/doc-generator.png) | ![Map](screenshots/lawyer-map.png) |
-
----
-
 ## ✨ Acknowledgements
 
 * [Hugging Face](https://huggingface.co)
