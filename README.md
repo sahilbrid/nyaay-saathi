@@ -1,61 +1,126 @@
-# Nyaay Saathi
+# 🏛️ Nyaayसाथी – The AI Legal Aid Advisor
 
-**Nyaay Saathi** is an AI-powered legal aid platform designed to provide accessible, multilingual support for common legal issues in India. The project combines advanced NLP, Retrieval Augmented Generation (RAG), and interactive mapping to empower users with case understanding, risk assessment, document generation, and connections to legal professionals.
+Empowering underserved communities in India with AI-driven legal support.
 
-## Features
+---
 
-### 1. Case Understanding via AI
-- Accepts user queries as text (Hindi or English).
-- Utilizes DeepSeek R1 to extract case details and classify cases (eviction, wage theft, etc.).
-- Robust chatbot interface for interactive case intake.
+## 📖 Overview
 
-### 2. Legal Risk Assessment & Advice
-- Performs risk prediction using retrieval of similar cases from a Hugging Face legal dataset (`ninadn/indian-legal`), employing cosine similarity for matching.
-- Provides step-by-step guidance (evidence collection, deadlines).
-- Fetches relevant legal clauses from public databases to enhance advice.
+**Nyaayसाथी** is an AI-powered legal aid platform designed to assist low-income individuals in navigating complex legal issues such as evictions, wage theft, and domestic disputes. It provides multilingual chatbot support, legal risk assessment, document generation, and connects users with pro bono lawyers and NGOs.
 
-### 3. Document Generation & Templates
-- Auto-generates basic legal documents (complaint letters, dispute letters) using user-supplied details.
-- Includes pre-built templates for petitions, appeals, and other common legal filings.
+---
 
-### 4. Multilingual Chatbot
-- Supports Hindi and English for legal aid via both web and WhatsApp (powered by Twilio).
-- Text-to-text interface for accessibility—no speech features included.
+## 🚀 Features
 
-### 5. Lawyer & NGO Directory
-- Interactive map (built with Leaflet.js) displaying pro bono lawyers and legal aid NGOs based on user location.
-- Easy access to nearby legal assistance and support organizations.
+### 1️⃣ Case Understanding via AI
 
-## Technologies Used
+* Accepts **text inputs** (supports Hindi & English).
+* Uses **DeepSeek R1** for analyzing case details and understanding user intent.
+* Classifies cases into categories like:
 
-- **DeepSeek R1** for natural language understanding and case classification.
-- **Hugging Face Dataset** (`ninadn/indian-legal`) for retrieval-augmented advice.
-- **TypeScript, Python, JavaScript** for backend and chatbot logic.
-- **Twilio API** for WhatsApp integration.
-- **Leaflet.js** for interactive mapping of lawyers/NGOs.
-- **React, CSS, HTML** for frontend interface and templates.
+  * Eviction
+  * Wage Theft
+  * Domestic Violence
+  * Child Custody
+  * And more.
 
-## Getting Started
+### 2️⃣ Legal Risk Assessment & Guidance
 
-1. **Clone the repository**  
-   `git clone https://github.com/sahilbrid/nyaay-saathi.git`
+* **Retrieval-Augmented Generation (RAG):**
 
-2. **Install dependencies**  
-   Navigate to each service directory and run  
-   `npm install` or `pip install -r requirements.txt` as appropriate.
+  * Retrieves similar past cases from [Hugging Face dataset `ninadn/indian-legal`](https://huggingface.co/datasets/ninadn/indian-legal).
+  * Computes similarity using **cosine similarity**.
+* Provides:
 
-3. **Configure environment variables**  
-   - Add your Twilio credentials for WhatsApp integration.
-   - Set up keys for DeepSeek R1 and Hugging Face API.
+  * Risk prediction based on retrieved cases.
+  * Step-by-step guidance on evidence collection and deadlines.
+  * Fetches relevant legal clauses from public databases.
 
-4. **Run the development servers**  
-   - Frontend: `npm start`
-   - Backend/Chatbot: `python app.py` or equivalent
+### 3️⃣ Document Generation & Templates
 
-5. **Access the platform**  
-   - Web interface: Visit `http://localhost:3000`
-   - WhatsApp: Add the provided Twilio number and start chatting.
+* Auto-generates legal documents (e.g., complaint letters, eviction notices).
+* Provides pre-built templates for petitions, appeals, and dispute letters.
+* Templates are dynamically filled using user-provided case details.
 
-## Contributing
+### 4️⃣ Multilingual Chatbot
 
-We welcome contributions! Please open issues or submit pull requests for improvements or new features.
+* Chatbot available on:
+
+  * **WhatsApp** (via Twilio API)
+  * **Web App** (React frontend)
+* Supports **Hindi** and **English**.
+* Simplifies legal queries with user-friendly responses.
+
+### 5️⃣ Lawyer & NGO Directory
+
+* Uses **Leaflet.js** to display nearby pro bono lawyers and legal aid NGOs on an interactive map.
+* Helps users locate free legal support in their vicinity.
+
+---
+
+## 🏗️ Tech Stack
+
+| Layer             | Tools/Frameworks                         |
+| ----------------- | ---------------------------------------- |
+| **Frontend**      | React.js, Leaflet.js                     |
+| **Backend**       | Python, FastAPI                          |
+| **AI/NLP Models** | DeepSeek R1, Hugging Face Transformers   |
+| **RAG & Search**  | Cosine Similarity, Hugging Face Datasets |
+| **Messaging**     | Twilio API (WhatsApp Integration)        |
+| **Mapping**       | Leaflet.js                               |
+
+---
+
+## 📊 Market Opportunity & Impact
+
+* **Target Audience**: Low-income individuals, migrant workers, underserved communities.
+* **Impact**: Bridges the access-to-justice gap by empowering users to:
+
+  * Understand their legal rights.
+  * Take action with AI-assisted documentation.
+  * Connect with free legal services.
+
+---
+
+## 📦 Installation
+
+### Backend Setup
+
+```bash
+git clone https://github.com/<your-username>/NyaaySathi.git
+cd NyaaySathi/backend
+python app.py
+```
+
+### Frontend Setup
+
+```bash
+cd ../frontend
+npm install
+npm start
+```
+
+### Configure WhatsApp
+
+* Setup Twilio credentials in `.env` file.
+
+---
+
+## 📸 Screenshots
+
+| Case Analyzer                                   | Document Generator                              | Lawyer Map                         |
+| ----------------------------------------------- | ----------------------------------------------- | ---------------------------------- |
+| ![Case Analyzer](screenshots/case-analyzer.png) | ![Doc Generator](screenshots/doc-generator.png) | ![Map](screenshots/lawyer-map.png) |
+
+---
+
+## ✨ Acknowledgements
+
+* [Hugging Face](https://huggingface.co)
+* [DeepSeek](https://deepseek.com)
+* [Twilio](https://www.twilio.com)
+* [Leaflet.js](https://leafletjs.com)
+
+---
+
+> 🔗 "Empowering Mumbai’s underserved with AI-driven legal support" – Nyaayसाथी
